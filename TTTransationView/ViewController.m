@@ -67,7 +67,7 @@ static NSString * identifier = @"cell";
 
         TTTextCell * textCell = (TTTextCell *)cell;
         cell.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];
-        textCell.text = [NSString stringWithFormat:@"第%d个cell", index];
+        textCell.text = [NSString stringWithFormat:@"第%ld个cell",(unsigned long)index];
         return cell;
     }
 

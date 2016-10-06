@@ -38,10 +38,14 @@
 
             [_attributes addObject:att];
         }
-
     }
     
     return _attributes;
+}
+
+-(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
+
+    return YES;
 }
 
 -(void)setItemSize:(CGSize)itemSize {
@@ -69,8 +73,6 @@
         CGFloat y = distanceH / (itemNum - 1) * i;
         att.frame = CGRectMake(x, y, self.itemSize.width, self.itemSize.height);
     }
-
-
 }
 
 - (nullable NSArray<__kindof UICollectionViewLayoutAttributes *> *)layoutAttributesForElementsInRect:(CGRect)rect {
@@ -92,7 +94,6 @@
     if (_attributes.count == 0) {
         return nil;
     }
-
     return self.attributes[index];
 }
 

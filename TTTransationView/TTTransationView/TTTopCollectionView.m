@@ -44,12 +44,6 @@ static NSInteger UnableIndexValue = -1;
 
 @implementation TTTopCollectionView
 
--(void)layoutSubviews {
-
-    [super layoutSubviews];
-    
-}
-
 -(instancetype)initWithFrame:(CGRect)frame collectionViewLayout:(UICollectionViewLayout *)layout {
 
     if (self == [super initWithFrame:frame collectionViewLayout:layout]) {
@@ -73,8 +67,8 @@ static NSInteger UnableIndexValue = -1;
     }
 
     [super setContentOffset:contentOffset];
-
 }
+
 
 -(void)setFrame:(CGRect)frame {
 
@@ -84,7 +78,6 @@ static NSInteger UnableIndexValue = -1;
     CGFloat superHeight  = self.superview.frame.size.height;
     // 计算动画的进度
     CGFloat progress     = (selfHeight - TTTopCollectionViewCellHeightStateOriginal) / (superHeight - TTTopCollectionViewCellHeightStateOriginal);
-    progress            = sinf(M_PI_2 * progress);
 
     // 调整cell的大小
     self.layout.itemSize = CGSizeMake(self.layout.itemSize.width, TTTopCollectionViewCellHeightStateOriginal - (TTTopCollectionViewCellHeightStateOriginal - TTTopCollectionViewCellHeightStatePlain) * progress);
@@ -103,7 +96,6 @@ static NSInteger UnableIndexValue = -1;
         self.contentOffset   = CGPointMake(contentX, contentY);
     }
 
-    [self.layout invalidateLayout];
 }
 
 +(CGFloat)originalCellHeight {
@@ -177,6 +169,11 @@ static NSInteger UnableIndexValue = -1;
 
     // 开始动画
     self.displayLink.paused = NO;
+}
+
+-(void)layoutSubviews {
+
+    [super layoutSubviews];
 }
 
 #pragma mark - TTCollectionViewLayoutDataSourse

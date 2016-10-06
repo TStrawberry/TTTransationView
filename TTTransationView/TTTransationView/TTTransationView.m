@@ -59,6 +59,9 @@ TTCollectionViewLayout * collectionViewLayout = [[TTCollectionViewLayout alloc] 
     topCollectionView.delegate                    = self;
     topCollectionView.pagingEnabled               = YES;
     topCollectionView.backgroundColor             = [UIColor clearColor];
+#ifdef __IPHONE_10_0
+    topCollectionView.prefetchingEnabled            = NO;
+#endif
     [self addSubview:topCollectionView];
     self.topCollectionView                        = topCollectionView;
 

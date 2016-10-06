@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962745641DA6956D0035594A /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 962745631DA6956D0035594A /* demo.gif */; };
 		965325071D90D2D900C31757 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 965325061D90D2D900C31757 /* main.m */; };
 		9653250A1D90D2D900C31757 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 965325091D90D2D900C31757 /* AppDelegate.m */; };
 		9653250D1D90D2D900C31757 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9653250C1D90D2D900C31757 /* ViewController.m */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		962745631DA6956D0035594A /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		965325021D90D2D900C31757 /* TTTransationView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTTransationView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965325061D90D2D900C31757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		965325081D90D2D900C31757 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		965325051D90D2D900C31757 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				962745631DA6956D0035594A /* demo.gif */,
 				965325061D90D2D900C31757 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -144,11 +147,12 @@
 		965324FA1D90D2D900C31757 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = TT;
 				TargetAttributes = {
 					965325011D90D2D900C31757 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2D4G4343X5;
 					};
 				};
 			};
@@ -176,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				965325151D90D2D900C31757 /* LaunchScreen.storyboard in Resources */,
+				962745641DA6956D0035594A /* demo.gif in Resources */,
 				965325121D90D2D900C31757 /* Assets.xcassets in Resources */,
 				9653252F1D90D80500C31757 /* TTTextCell.xib in Resources */,
 				965325101D90D2D900C31757 /* Main.storyboard in Resources */,
@@ -237,8 +242,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -260,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -281,8 +288,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -298,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -309,7 +318,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2D4G4343X5;
 				INFOPLIST_FILE = TTTransationView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangtao.TTTransationView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -320,7 +331,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2D4G4343X5;
 				INFOPLIST_FILE = TTTransationView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangtao.TTTransationView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +359,7 @@
 				9653251B1D90D2D900C31757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
