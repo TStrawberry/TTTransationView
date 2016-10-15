@@ -153,6 +153,7 @@
 					965325011D90D2D900C31757 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 2D4G4343X5;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -318,12 +319,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 2D4G4343X5;
 				INFOPLIST_FILE = TTTransationView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangtao.TTTransationView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "51a2d27e-07d8-4127-8e41-113e28ebb7ba";
+				PROVISIONING_PROFILE_SPECIFIER = TTTransationViewDistribution;
 			};
 			name = Debug;
 		};
@@ -331,12 +335,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = 2D4G4343X5;
 				INFOPLIST_FILE = TTTransationView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tangtao.TTTransationView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "51a2d27e-07d8-4127-8e41-113e28ebb7ba";
+				PROVISIONING_PROFILE_SPECIFIER = TTTransationViewDistribution;
 			};
 			name = Release;
 		};
